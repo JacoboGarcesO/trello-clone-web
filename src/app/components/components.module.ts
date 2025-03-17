@@ -6,6 +6,8 @@ import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { AboutItemComponent } from './about-item/about-item.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { RouterModule } from '@angular/router';
     AlertComponent,
     HeroComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent,
+    AboutItemComponent
   ],
   imports: [
     CommonModule,
