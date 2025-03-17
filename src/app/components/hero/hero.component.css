@@ -1,0 +1,24 @@
+section {
+  background-color: #f3f3f5;
+  padding-top: 160px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 20px;
+}
