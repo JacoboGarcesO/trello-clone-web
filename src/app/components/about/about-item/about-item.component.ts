@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-about-item',
@@ -8,4 +8,11 @@ import { Component, Input } from '@angular/core';
 export class AboutItemComponent {
   @Input() public title: string;
   @Input() public description: string;
+  @Input() public isActive: boolean;
+
+  @Output() public activeChange = new EventEmitter<void>();
+
+  toggleActive() {
+    this.activeChange.emit();
+  }
 }
