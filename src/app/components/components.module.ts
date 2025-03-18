@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AboutItemComponent } from './about-item/about-item.component';
+import { NewsComponent } from './news/news.component';
+import { NewComponent } from './news/new/new.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { AboutItemComponent } from './about-item/about-item.component';
     HomeComponent,
     LoginComponent,
     AboutComponent,
-    AboutItemComponent
+    AboutItemComponent,
+    NewsComponent,
+    NewComponent,
+    ServicesComponent
   ],
   imports: [
     CommonModule,
