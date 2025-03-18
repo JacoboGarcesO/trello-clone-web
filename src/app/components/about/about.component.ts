@@ -24,7 +24,7 @@ export class AboutComponent {
     }
   ];
 
-  toggleActive(index: number) {
+  toggleActive(index: number): void {
     this.items = this.items.map((item, i) => {
       if (i === index) {
         return { ...item, isActive: true };
