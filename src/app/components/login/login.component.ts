@@ -12,15 +12,11 @@ export class LoginComponent {
   // constructor(private formBuilder: FormBuilder) { }
 
   loginForm = this.formBuilder.group({
-    username: ['', [Validators.required, Validators.minLength(3)]],
-    password: ['', [Validators.required, Validators.minLength(8)]]
+    email: ['', [Validators.required, Validators.email]],
   })
 
-  submit() {
-    console.log(this.loginForm.controls.password.errors);
-    
+  submit() {    
     if (!this.loginForm.valid) { return; }
-    
     console.log(this.loginForm.getRawValue());
   }
 }
