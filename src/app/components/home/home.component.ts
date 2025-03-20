@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { State } from '../state/state';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,5 @@ import { Component, inject } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  constructor(public state: State) { }
 }
