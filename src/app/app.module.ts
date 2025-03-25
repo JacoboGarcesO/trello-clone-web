@@ -15,7 +15,6 @@ registerLocaleData(localeEs, 'es');
   ],
   imports: [
     BrowserModule,
-    ComponentsModule,
     AppRoutingModule
   ],
   providers : [

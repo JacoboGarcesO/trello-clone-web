@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { delay, map, of } from 'rxjs';
 import { State } from '../state/state';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent {
 
   public price = 20000;
 
-  constructor(public state: State) {
+  constructor(public state: State, private router: Router) {
     const obs = of(1, 2, 3, 4).pipe(
       delay(10000),
       map(value => value * 2)
@@ -28,7 +29,8 @@ export class LoginComponent {
 
   submit() {    
     if (!this.loginForm.valid) { return; }
+
     this.state.userEmail = this.loginForm.getRawValue().email;
-    console.log(this.loginForm.getRawValue());
+    this.router.navigate(['/boards']);
   }
 }

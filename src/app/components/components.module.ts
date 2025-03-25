@@ -14,6 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BoardsComponent } from './boards/boards.component';
 import { HeaderComponentBo } from './boards/header/header.component';
+import { ComponentsRoutingModule } from './components-routing.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HeaderComponentBo } from './boards/header/header.component';
   imports: [
     CommonModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ComponentsRoutingModule
   ],
   exports: [
     HeaderComponent,

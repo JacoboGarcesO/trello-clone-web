@@ -3,19 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { BoardsComponent } from './components/boards/boards.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'boards',
-    component: BoardsComponent
+    loadChildren: () => import('./components/components.module').then(module => module.ComponentsModule)
   }
 ];
 
