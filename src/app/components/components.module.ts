@@ -12,6 +12,8 @@ import { NewsComponent } from './news/news.component';
 import { NewComponent } from './news/new/new.component';
 import { ServicesComponent } from './services/services.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BoardsComponent } from './boards/boards.component';
+import { HeaderComponentBo } from './boards/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutItemComponent,
     NewsComponent,
     NewComponent,
-    ServicesComponent
+    ServicesComponent,
+    BoardsComponent,
+    HeaderComponentBo
   ],
   imports: [
     CommonModule,
