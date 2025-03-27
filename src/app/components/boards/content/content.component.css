@@ -1,0 +1,168 @@
+.content-container {
+  padding: 40px 32px;
+  color: #b6c2cf;
+}
+
+.workspace-header {
+  margin-bottom: 40px;
+}
+
+.workspace-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #b6c2cf;
+}
+
+.workspace-tabs {
+  background-color: #282e33;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.workspace-info {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workspace-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #e362e3;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.workspace-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  padding: 0 20px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  color: #b6c2cf;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.tab.active {
+  color: #579dff;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 3px;
+  background-color: #579dff;
+  border-radius: 3px 3px 0 0;
+}
+
+.tab.premium {
+  margin-left: auto;
+  color: #e2b203;
+}
+
+.tab.premium i {
+  color: #e2b203;
+}
+
+.boards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.board-card {
+  height: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.board-card:hover {
+  transform: translateY(-4px);
+}
+
+.board-background {
+  height: 100%;
+  padding: 8px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.board-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.star-button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.star-button:hover {
+  opacity: 1;
+}
+
+.board-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.create-board {
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.create-board:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.create-board-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #b6c2cf;
+  text-align: center;
+}

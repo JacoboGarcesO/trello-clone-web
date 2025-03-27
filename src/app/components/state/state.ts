@@ -6,8 +6,6 @@ import { BehaviorSubject, Observable } from "rxjs";
 })
 export class State {
   private _userEmail = new BehaviorSubject<string>(null);
-  private _users = new BehaviorSubject<string[]>([]);
-  private _token = new BehaviorSubject<string[]>([]);
 
   get userEmail$(): Observable<string> {
     return this._userEmail.asObservable();

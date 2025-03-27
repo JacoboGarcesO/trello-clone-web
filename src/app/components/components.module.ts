@@ -15,6 +15,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BoardsComponent } from './boards/boards.component';
 import { HeaderComponentBo } from './boards/header/header.component';
 import { ComponentsRoutingModule } from './components-routing.module';
+import { NavbarComponent } from './boards/navbar/navbar.component';
+import { ContentComponent } from './boards/content/content.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ComponentsRoutingModule } from './components-routing.module';
     NewComponent,
     ServicesComponent,
     BoardsComponent,
-    HeaderComponentBo
+    HeaderComponentBo,
+    NavbarComponent,
+    ContentComponent
   ],
   imports: [
     CommonModule,

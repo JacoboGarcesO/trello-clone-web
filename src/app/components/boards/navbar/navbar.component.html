@@ -1,0 +1,50 @@
+<nav class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-item" routerLink="/tableros">
+      <i class="navbar-icon board-icon fa-solid fa-table-list"></i>
+      <span>Tableros</span>
+    </a>
+    <a class="navbar-item" routerLink="/plantillas">
+      <i class="navbar-icon template-icon fa-solid fa-table-list"></i>
+      <span>Plantillas</span>
+    </a>
+  </div>
+
+  <div class="navbar-section workspace-section">
+    <h3 class="section-title">Espacios de trabajo</h3>
+    <div class="workspace-item" (click)="toggleWorkspace()">
+      <div class="workspace-avatar">E</div>
+      <span class="workspace-name">Espacio de trabajo de Jacobo Garcés</span>
+      <i class="expand-icon fas fa-chevron-down" [ngClass]="{'expanded': isWorkspaceExpanded}"></i>
+    </div>
+    <div class="workspace-menu" *ngIf="isWorkspaceExpanded">
+      <a class="workspace-menu-item" routerLink="/tableros">
+        <i class="menu-icon board-icon"></i>
+        <span>Tableros</span>
+      </a>
+      <a class="workspace-menu-item" routerLink="/destacado">
+        <i class="menu-icon star-icon"></i>
+        <span>Lo más destacado</span>
+      </a>
+      <a class="workspace-menu-item" routerLink="/vistas">
+        <i class="menu-icon views-icon"></i>
+        <span>Vistas</span>
+      </a>
+      <a class="workspace-menu-item" routerLink="/miembros">
+        <i class="menu-icon members-icon"></i>
+        <span>Miembros</span>
+        <i class="add-icon">+</i>
+      </a>
+      <a class="workspace-menu-item" routerLink="/configuracion">
+        <i class="menu-icon settings-icon"></i>
+        <span>Configuración</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="navbar-section premium-section">
+    <h3 class="premium-title">Prueba Trello Premium</h3>
+    <p class="premium-description">Consigue tableros ilimitados, replicación de tarjetas, automatizaciones sin límites y mucho más.</p>
+    <a class="premium-link" href="#">Comenzar prueba gratis</a>
+  </div>
+</nav>

@@ -1,0 +1,180 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2125;
+  color: #b6c2cf;
+  width: 260px;
+  padding: 12px 0;
+}
+
+.navbar-section {
+  padding: 0 12px;
+}
+
+.navbar-section:first-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  gap: 5px;
+  text-decoration: none;
+  color: #b6c2cf;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 16px 0 8px;
+  padding: 0 12px;
+  color: #9fadbc;
+}
+
+.navbar-icon {
+  font-size: 14px;
+}
+
+.workspace-section {
+  height: 300px;
+  overflow-y: auto;
+  color-scheme: dark;
+}
+
+.workspace-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+}
+
+.workspace-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.workspace-avatar {
+  width: 24px;
+  height: 24px;
+  background-color: #e362e3;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.workspace-name {
+  flex: 1;
+  font-size: 13px;
+}
+
+.expand-icon {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+  font-size: 10px;
+}
+
+.expand-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.workspace-menu {
+  margin-top: 4px;
+}
+
+.workspace-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 36px;
+  text-decoration: none;
+  color: #b6c2cf;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+.workspace-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.star-icon {
+  color: #f2d600;
+}
+
+.views-icon {
+  color: #579dff;
+}
+
+.members-icon {
+  color: #579dff;
+}
+
+.settings-icon {
+  color: #b6c2cf;
+}
+
+.add-icon {
+  position: absolute;
+  right: 12px;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.workspace-menu-item:hover .add-icon {
+  opacity: 1;
+}
+
+.premium-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.premium-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding: 0 12px;
+}
+
+.premium-description {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  padding: 0 12px;
+  color: rgba(182, 194, 207, 0.8);
+}
+
+.premium-link {
+  color: #579dff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 12px;
+  display: inline-block;
+}
+
+.premium-link:hover {
+  text-decoration: underline;
+}

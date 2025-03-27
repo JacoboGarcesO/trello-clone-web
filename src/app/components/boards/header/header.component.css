@@ -5,6 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .header-left {
@@ -67,9 +72,10 @@
 .create-button {
   background-color: #579DFF;
   border: none;
-  color: white;
+  color: black;
   padding: 6px 12px;
   border-radius: 3px;
+  font-weight: bold;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
@@ -106,10 +112,10 @@
 }
 
 .avatar-button {
-  background-color: #579DFF;
+  background-color: #ff991f;
   border: none;
   border-radius: 50%;
-  color: white;
+  color: black;
   width: 32px;
   height: 32px;
   display: flex;
@@ -121,5 +127,5 @@
 }
 
 .avatar-button:hover {
-  background-color: #85B8FF;
+  background-color: #ec901e;
 }

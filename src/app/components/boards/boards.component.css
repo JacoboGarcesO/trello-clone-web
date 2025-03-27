@@ -1,0 +1,11 @@
+.boards-content {
+    max-width: 1151px;
+    
+    margin: 0 auto;
+    display: flex;
+}
+
+.boards-container {
+    min-height: calc(100dvh - 44px);
+    background-color: #1D2125;
+}
