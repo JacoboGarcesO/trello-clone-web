@@ -34,21 +34,28 @@
   </div>
   
   <div class="boards-grid">
-    <div class="board-card">
+    <div class="board-card" *ngFor="let board of this.state.boards$ | async">
       <div class="board-background" style="background: linear-gradient(135deg, #654ea3, #da98b4);">
         <div class="board-actions">
           <button class="star-button">
             <i class="fa-regular fa-star"></i>
           </button>
         </div>
-        <h3 class="board-title">Tablero 1</h3>
+        <h3 class="board-title">{{board.name}}</h3>
       </div>
     </div>
     
     <div class="create-board">
-      <div class="create-board-content">
+      <div class="create-board-content" (click)="toggle()">
         <span>Crear un tablero nuevo</span>
       </div>
+
+      <form [formGroup]="form" *ngIf="this.isOpen" (ngSubmit)="submit()">
+        <input type="text" placeholder="Nombre del tablero" formControlName="name">
+        <button class="create-button">
+          Crear
+        </button>
+      </form>
     </div>
   </div>
 </div>

@@ -166,3 +166,15 @@
   color: #b6c2cf;
   text-align: center;
 }
+
+.create-button {
+  background-color: #579DFF;
+  border: none;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
